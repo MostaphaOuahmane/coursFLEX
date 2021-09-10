@@ -1,0 +1,64 @@
+body {
+background-color: lightblue;
+}
+main {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 800px;
+}
+h1 {
+    text-align: center;
+}
+.or {
+    background-color: lightgreen;
+}
+.argent {
+    background-color: lightslategray;
+}
+.vert {
+    background-color: rgb(200, 245, 75);
+}
+.rose {
+    background-color: palevioletred;
+}
+.flex {
+    background-color: orange;
+    /* 1- le patent est display flex */
+    margin: auto;
+    display: flex;
+    /* si le parent est trop petit mes div s'adaptent à 
+    la largeur du parent ils vont rentrer 
+     quoi qu'il arrive */
+    width: 600px;
+    height: 800px;
+    
+    /* 4-si flex-wrap ;wrap la largeur des enfants est respectée le 4 élément va à la ling  */
+    /* flex-wrap: wrap; */
+    /* 5 si on ulilise  flex-wrap:wrap-reverse; 
+    le dérnier élément qui ne rentre pas dans le parent 
+    passe en premier */
+    /* flex-wrap: wrap-reverse; */
+    /* 6- comportement normal ou par defaut ; on force l'alignement */
+    /* flex-wrap: nowrap; */
+    /* 7- la justify d'élément  avec justify-content :center; 
+    flex-star par défaut;flex-end à la fin ;space-between*/
+    justify-content:space-evenly;
+    /* 8- autre proprité la hauteur align-items et l'aligment vertical ;
+    stretch la valeur par défaut ;center au center; end à la fin */
+    align-items: center;
+    
+}
+.flex div {
+    /*2- toutes les div dans le div parent qu'est display flex  */
+    width: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+   
+}
+.h-50 {
+    height: 50%;
+}
+.h-75 {
+    height: 75%;
+}
