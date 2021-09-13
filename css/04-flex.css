@@ -14,6 +14,9 @@ body {
 .vert-leger {
     background: lime;
 }
+.gris-leger {
+    background:lightgrey;
+}
 .conteneur {
     width: 100%;
     background-color: #fff;
@@ -22,6 +25,18 @@ body {
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    border: 1px solid orange; 
+    margin-bottom: 5px;
+}
+/* la class pour mettre les éléments les uns en dessous des autres  */
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.centre {
+    justify-content: center;
 }
 /* la grille sur 12 colonnes, et la définition de la largeur des colonnes */
 .col-1 {
@@ -69,8 +84,68 @@ body {
     width: 75%;
     padding: 5px;
 }
+.col-10 {
+    width:83.333333% ;
+    padding: 5px;
+}
+.col-11 {
+    width: 91.666666%;
+    padding: 5px;
+}
 
 .col-12 {
     width: 100%;
     padding: 5px;    
+}
+
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.66666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}
+.marge-4 {
+    margin-left: 33.333333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}
+h1 {
+    background: url(../img/wj4uesqn.bmp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+    width: 80%;
+}
+.transparent {
+    background-color: #fff;
+    opacity: 0.8;
+}
+footer {
+    height: 200px;
+    background-color: aqua;
 }

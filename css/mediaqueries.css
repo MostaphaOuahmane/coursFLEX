@@ -1,0 +1,201 @@
+/* une grille avec flex et en resonsive */
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:lightyellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    color: #101010;
+}
+.bleu-leger {
+    background-color: lightskyblue;
+}
+.vert-leger {
+    background: lime;
+}
+.gris-leger {
+    background:lightgrey;
+}
+main {
+    width: 80%;
+    /* background-color: beige; */
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 5px; 
+    margin-bottom: 5px;
+}
+.col-1 {
+    width: 8.333333%;
+    padding: 5px;
+}
+
+.col-2 {
+    width: 16.666666%;
+    padding: 5px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 5px;
+}
+
+.col-4 {
+    width: 33.333333%;
+    padding: 5px;
+}
+
+.col-5 {
+    width: 41.666666%;
+    padding: 5px;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 5px;
+}
+
+.col-7 {
+    width: 58.333333%;
+    padding: 5px;
+}
+
+.col-8 {
+    width: 66.666666%;
+    padding: 5px;
+}
+
+.col-9 {
+    width: 75%;
+    padding: 5px;
+}
+.col-10 {
+    width:83.333333% ;
+    padding: 5px;
+}
+.col-11 {
+    width: 91.666666%;
+    padding: 5px;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 5px;    
+}
+
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.66666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}
+.marge-4 {
+    margin-left: 33.333333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}
+.img-fluid {
+    width: 100%;
+}
+/* les régeles de médias quiries pour le respansive et les différent écran */
+/* pour les téléphone ou les smartphones */
+@media (max-width:320px) {
+    body {
+        background: #fff;
+    }
+    .colim-xs {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-xs-12 {  
+        width: 100%;
+    }
+    .marge-xs {
+        margin: 0;
+    }
+    
+    main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .column-reverse {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+/* por les petites tablettes et les smartphones grand écrans */
+@media (min-width:321px) and (max-width:767px) {
+    body { 
+        background: pink;
+    }
+    main {
+        width:100%;
+        background-color: beige;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .column-reverse {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+/* por les petites tablettes et certains ordinateur portables  */
+@media (min-width:768px) and (max-width:1096px) {
+    body { 
+        background:purple;
+    }
+    main {
+        width: 100%;
+        background-color: beige;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+}
+/* pour les ordinateurs de bureau , les écrons plus grands que 1097px */
+@media (min-width:1096px) {
+    body { 
+        background:rgb(73, 223, 203);
+    }
+    main {
+        width: 100%;
+        background-color: beige;
+        margin-right: auto;
+        margin-left: auto;
+      
+    }
+
+}
