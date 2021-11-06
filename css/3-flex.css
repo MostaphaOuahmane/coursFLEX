@@ -1,17 +1,17 @@
 body {
-    background-color: rgb(25, 182, 235);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(25, 182, 235);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main {
-    width: 1000px;
-    margin: 0 auto;
-    background-color: #fff;
-    min-height: 500px;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 500px;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 /* .or {
@@ -30,23 +30,20 @@ h1 {
     background-color: rgb(238, 184, 184);
 } */
 
-
 /* flex  */
 
 .flex {
-    /* background-color: pink; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* row-gap: 25px;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* row-gap: 25px;
     column-gap:2%; */
-    gap: 25px 2%;
-    justify-content: center;
-    
-    
+  gap: 25px 2%;
+  justify-content: center;
 }
 
-.flex div { 
-    text-align: justify;    
-    width:49%;
+.flex div {
+  text-align: justify;
+  width: 49%;
 }
